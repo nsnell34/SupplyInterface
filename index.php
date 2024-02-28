@@ -24,7 +24,7 @@ class GUI {
     }
 
     public function viewProducts(){
-
+        $x=2;
         ?>
 
         <link href="table.css" rel="stylesheet">

@@ -20,13 +20,18 @@ class GUI {
             $this->viewProducts();
         } elseif ($_POST['act'] == "View History"){
             $this->viewHistory();
+        } elseif ($_POST['act'] == "Return"){
+            $this->return();
         } 
+
         
     }
 
     public function viewProducts(){
         echo("
         <link href='table.css' rel='stylesheet'>
+        <p>Products</p>
+        <div>margin: 0 auto; width: 50%;</div>
         <table>
             <tr>
                 <th>Species</th>
@@ -49,12 +54,20 @@ class GUI {
     public function viewHistory(){
         echo("History Page");
     }
+
+    public function return(){
+        header("Location: index.html");
+    }
 }
 
 $gui = new GUI();   
 $gui->display();    
 
 ?>
+<form method="post" action="index.php">
+    <input type="submit" name="act" value="Return">
+</form>
+
 
 </body>
 </html>

@@ -25,29 +25,24 @@ class GUI {
     }
 
     public function viewProducts(){
-        $x=2;
         echo("
-
-        <link href='table.css' rel='stylesheet'>
         <table>
-    
-        <tr>
-            <th>Species</th>
-            <th>Location</th>
-            <th>Weight</th>
-            <th>Quantity</th>
-        </tr>
-        
-        <tr>
-            <td>Fish</td>
-            <td>Example Location</td>
-            <td>lbs</td>
-            <td>quantity</td>
-        </tr>
-        
-    </table>
-    ");
+            <tr>
+                <th>Species</th>
+                <th>Location</th>
+                <th>Weight</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Fish</td>
+                <td>Example Location</td>
+                <td>lbs</td>
+                <td>quantity</td>
+            </tr>
+        </table>
+        ");
     }
+
 
     public function viewHistory(){
         echo("History Page");

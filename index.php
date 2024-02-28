@@ -31,7 +31,7 @@ class GUI {
         echo("
         <link href='table.css' rel='stylesheet'>
         <p>Products</p>
-        <div>margin: 0 auto; width: 50%;</div>
+        <div></div>
         <table>
             <tr>
                 <th>Species</th>

@@ -2,22 +2,39 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-
+<title>Fish Supply Chain Management</title>
+<link rel="stylesheet" href="table.css">
 </head>
 <body>
 
-<p>Welcome, User</p>
+<div class="container">
+    <h1>Welcome, User</h1>
 
+    <div class="options">
+        <form method="post" action="index.php">
+            <input type="submit" name="act" value="View Products">
+        </form>
 
-<link href="table.css" rel="stylesheet">
-    
-<form method="post" action="index.php">
-    <input type="submit" name="act" value="View Products">
+        <form method="post" action="index.php">
+            <input type="submit" name="act" value="View History">
+        </form>
+        <form method="post" action="index.php">
+            <input type="submit" name="act" value="Manage Orders">
+        </form>
 
-<form method="post" action="index.php">
-    <input type="submit" name="act" value="View History">
+        <form method="post" action="index.php">
+            <input type="submit" name="act" value="Manage Suppliers">
+        </form>
+        <form method="post" action="index.php">
+            <input type="submit" name="act" value="Shipping & Logistics">
+        </form>
 
-</form>
+        <form method="post" action="index.php">
+            <input type="submit" name="act" value="Reporting & Analytics">
+        </form>
+        
+    </div>
+</div>
 
 </body>
 </html>

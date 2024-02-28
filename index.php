@@ -12,7 +12,7 @@ set_time_limit(1800);
 class GUI {
 
     public function display(){
-            $x = 2;
+        echo "Hello World";
     }
 }
 

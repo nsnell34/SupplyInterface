@@ -31,8 +31,6 @@ class GUI {
         } elseif ($_POST['act'] == "Return"){
             $this->return();
         } 
-
-
         
     }
 
@@ -99,6 +97,7 @@ $gui->display();
 
 ?>
 <form method="post" action="index.php">
+    <br>
     <input type="submit" name="act" value="Return">
 </form>
 

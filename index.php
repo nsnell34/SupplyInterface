@@ -46,7 +46,7 @@ class GUI {
                 <td>quantity</td>
             </tr>
         </table>
-        <div></div>
+        <br>
         ");
 
     }
@@ -55,6 +55,7 @@ class GUI {
     public function viewHistory(){
         echo("<link href='table.css' rel='stylesheet'>");
         echo("History Page");
+        echo("<br>");
     }
 
     public function return(){

@@ -53,7 +53,6 @@ class GUI {
                 <td>quantity</td>
             </tr>
         </table>
-        <br>
         ");
 
     }

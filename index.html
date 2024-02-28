@@ -7,6 +7,22 @@
 </head>
 <body>
 
+<style>
+        .container {
+            text-align: center;
+        }
+    
+        .options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .options form {
+            margin: 10px;
+        }
+</style>
+
 <div class="container">
     <h1>Welcome, User</h1>
 
@@ -14,21 +30,23 @@
         <form method="post" action="index.php">
             <input type="submit" name="act" value="View Products">
         </form>
-
+        <br>
         <form method="post" action="index.php">
             <input type="submit" name="act" value="View History">
         </form>
+        <br>
         <form method="post" action="index.php">
             <input type="submit" name="act" value="Manage Orders">
         </form>
-
+        <br>
         <form method="post" action="index.php">
             <input type="submit" name="act" value="Manage Suppliers">
         </form>
+        <br>
         <form method="post" action="index.php">
             <input type="submit" name="act" value="Shipping & Logistics">
         </form>
-
+        <br>
         <form method="post" action="index.php">
             <input type="submit" name="act" value="Reporting & Analytics">
         </form>

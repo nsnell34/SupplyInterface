@@ -25,9 +25,8 @@ class GUI {
     }
 
     public function viewProducts(){
-        echo("Products Page");
+        echo("
 
-        /*
         <table>
             <tr>
                 <th>Species</th>
@@ -43,7 +42,7 @@ class GUI {
             </tr>
         </table>
         ");
-        */
+
     }
 
 

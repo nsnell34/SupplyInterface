@@ -1,3 +1,6 @@
+<html>
+<body>
+
 <?php
 error_reporting(-1);
 ini_set('display_errors', '1');
@@ -12,8 +15,45 @@ set_time_limit(1800);
 class GUI {
 
     public function display(){
-        echo "Hello World";
+        if ($_POST['act'] == "View Products"){
+            $this->viewProducts();
+        } elseif ($_POST['act'] == "View History"){
+            $this->viewHistory();
+        } 
+        
+    }
+
+    public function viewProducts(){
+
+        ?>
+
+        <link href="table.css" rel="stylesheet">
+        <table>
+    
+        <tr>
+            <th>Species</th>
+            <th>Location</th>
+            <th>Weight</th>
+            <th>Quantity</th>
+        </tr>
+        
+        <tr>
+            <td>Fish</td>
+            <td>Example Location</td>
+            <td>lbs</td>
+            <td>quantity</td>
+        </tr>
+        
+    </table>
+    <?php
+    }
+
+    public function viewHistory(){
+        echo("History Page");
     }
 }
 
+?>
 
+</body>
+</html>

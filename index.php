@@ -20,9 +20,18 @@ class GUI {
             $this->viewProducts();
         } elseif ($_POST['act'] == "View History"){
             $this->viewHistory();
+        } elseif ($_POST['act'] == "Manage Orders"){
+            $this->manageOrders();
+        } elseif ($_POST['act'] == "Manage Suppliers"){
+            $this->manageSuppliers();
+        } elseif ($_POST['act'] == "Shipping & Logistics"){
+            $this->shippingLogistics();
+        } elseif ($_POST['act'] == "Reporting & Analytics"){
+            $this->reportingAnalytics();
         } elseif ($_POST['act'] == "Return"){
             $this->return();
         } 
+
 
         
     }
@@ -55,6 +64,28 @@ class GUI {
     public function viewHistory(){
         echo("<link href='table.css' rel='stylesheet'>");
         echo("History Page");
+        echo("<br>");
+    }
+
+    public function manageOrders(){
+        echo("<link href='table.css' rel='stylesheet'>");
+        echo("Manage Orders Page");
+        echo("<br>");
+    }
+
+    public function manageSuppliers(){
+        echo("<link href='table.css' rel='stylesheet'>");
+        echo("Manage Suppliers Page");
+        echo("<br>");
+    }
+    public function shippingLogistics(){    
+        echo("<link href='table.css' rel='stylesheet'>");
+        echo("Shipping & Logistics Page");
+        echo("<br>");
+    }
+    public function reportingAnalytics(){
+        echo("<link href='table.css' rel='stylesheet'>");
+        echo("Reporting & Analytics Page");
         echo("<br>");
     }
 

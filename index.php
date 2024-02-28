@@ -53,7 +53,12 @@ class GUI {
     }
 }
 
+$gui = new GUI();   
+$gui->display();    
+
 ?>
 
 </body>
 </html>
+
+

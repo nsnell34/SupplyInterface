@@ -26,7 +26,7 @@ class GUI {
 
     public function viewProducts(){
         echo("
-        <link href='tables.css' rel='stylesheet'>
+        <link href='table.css' rel='stylesheet'>
         <table>
             <tr>
                 <th>Species</th>

@@ -2,6 +2,7 @@
 <body>
 
 <?php
+
 error_reporting(-1);
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
@@ -25,9 +26,9 @@ class GUI {
 
     public function viewProducts(){
         $x=2;
-        ?>
+        echo("
 
-        <link href="table.css" rel="stylesheet">
+        <link href='table.css' rel='stylesheet'>
         <table>
     
         <tr>
@@ -45,7 +46,7 @@ class GUI {
         </tr>
         
     </table>
-    <?php
+    ");
     }
 
     public function viewHistory(){

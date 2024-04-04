@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>View Products</title>
+        <link rel="stylesheet" href="table.css">
+    </head>
+
+    <body>
+        <script>
+
+// sample data. will be replaced with actual data from the network.
+// expected in json, but for now, we will use a javascript object.
+
+const jsonObject = {
+    Species: 'Salmon',
+    Location: 'Grand Forks',
+    Price: 22.50,
+    Quantity: 65
+};
+
+const jsonArray = Object.entries(jsonObject);
+
+const backButton = document.createElement('button');
+backButton.textContent = 'Back';
+backButton.style.backgroundColor = '#ccc';
+backButton.style.color = '#555';
+backButton.style.border = 'none';
+backButton.style.padding = '15px';
+backButton.style.borderRadius = '5px';
+backButton.style.cursor = 'pointer';
+backButton.style.marginBottom = '20px';
+backButton.addEventListener('click', () => {
+    window.location.href = '/';
+});
+document.body.appendChild(backButton);
+
+
+const table = document.createElement('table');
+const tbody = document.createElement('tbody');
+
+jsonArray.forEach(([key, value]) => {
+    const row = document.createElement('tr');
+    const keyCell = document.createElement('td');
+    const valueCell = document.createElement('td');
+
+    keyCell.innerHTML = `<strong>${key}</strong>`;
+    valueCell.textContent = value;
+
+    row.appendChild(keyCell);
+    row.appendChild(valueCell);
+    tbody.appendChild(row);
+});
+
+table.appendChild(tbody);
+document.body.appendChild(table);
+
+
+
+        </script>
+    </body>
+</html>
+
+
+
+

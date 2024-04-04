@@ -19,7 +19,7 @@ app.post('/action', (req, res) => {
 
     switch (action) {
         case 'View Products':   
-            res.send('Viewing Products');
+            res.sendFile(path.join(__dirname, 'viewProducts.html'));
             break;
         case 'View History':
             res.send('Viewing History');
